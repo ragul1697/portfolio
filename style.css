@@ -999,8 +999,8 @@ body.dark .work-links img {
 /* --------------------------------- */
 
 .contact-content {
-  display: grid;
-  grid-template-columns: minmax(245px, 35%) 1fr;
+  display: block;
+  /* grid-template-columns: minmax(245px, 35%) 1fr; */
   margin-block: var(--gutter-x-large);
   border: 1px solid var(--border);
   border-radius: var(--gutter-nano);
@@ -1057,7 +1057,7 @@ body.dark .work-links img {
   block-size: var(--gutter-nano);
   inline-size: var(--gutter-nano);
   border-radius: 50%;
-  background-color: red;
+  background-color: green;
   animation: blink 550ms alternate infinite var(--easing);
 }
 
