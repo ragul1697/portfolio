@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Read and update content attributes accordingly  -->
+  <meta name="description" content="Welcome to my portfolio website. 
+      I am a full stack web developer and I specialize in creating user-friendly, 
+      responsive and accessible websites. 
+      Explore my projects, open-source work and contact me for any inquiries or collaborations." />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Ragul's Portfolio">
+  <meta itemprop="description" content="Welcome to my portfolio website. 
+    I am a full stack web developer and I specialize in creating user-friendly, 
+    responsive and accessible websites. Explore my projects, 
+    open-source work and contact me for any inquiries or collaborations.">
+
+  <!-- Reference screenshot of updated site's header in place of content -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://ossportfolio.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ragul's Portfolio">
+  <meta property="og:description"
+    content="Welcome to my portfolio website. I am a full stack web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ragul's Portfolio">
+  <meta name="twitter:description"
+    content="Welcome to my portfolio website. I am a full stack web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+  <!-- Update favicon href attribute with image of yourself -->
+  <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
+
+  <!-- Preloading fonts for better performance -->
+
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Your name here -->
+  <title>Ragul's Portfolio</title>
+</head>
+
+<body>
+
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+
+  <header class="header">
+
+    <!-- Header Menu -->
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">menu</button>
+        <!-- <button type="button" class="menu-btn">Resume</button> -->
+      </div>
+    </div>
+
+    <!-- Nav Menu -->
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#experience">Experience</a></li>
+        <li class="nav-item"><a href="#work">My Work</a></li>
+        <li class="nav-item"><a href="#skills">My Skills</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Short Intro -->
+    <div class="container">
+      <div class="header-textbox">
+        <h1 class="h1">
+          <span>Hi, I'm Ragul</span>
+          <span>Full Stack Web Developer</span>
+        </h1>
+        <p class="header-text">
+          A full stack web developer and interface designer who builds UX
+          rich accessible and performant websites.
+        </p>
+        <div class="header-btns">
+          <!-- <a href="#contact" class="btn btn-cta">Hire me</a> -->
+          <a class="btn btn-cta" href="./assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="#work" class="btn btn-secondary">See my work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="article">
+      <div class="container">
+        <h2 class="h2" id="experience">Work Experience</h2>
+        <div class="article-boxes">
+          <article class="article-box featured-article">
+            <div class="article-textbox">
+
+              <div>
+                <h3 class="h3">
+                  Full Stack Developer <span class="company-title">@ KGiSL Technologies</span>
+                </h3>
+                <h6 class="h6" style="margin: 5px 0px 0px 0px;">
+                  Feb 2022 - Present
+                </h6>
+              </div>
+
+              <ul class="company-work-activities">
+                <li>
+                  <p class="article-text">
+                    Developed and led a project to migrate a legacy insurance product system from Oracle Forms to a
+                    modern, robust platform using Angular and Spring Boot. This migration aimed to enhance system
+                    performance, improve user experience, and ensure long-term maintainability and scalability.
+                  </p>
+                </li>
+                <li>
+                  <p class="article-text">
+                    Developed custom reusable components to enable fellow developers for faster development of the
+                    project.
+                  </p>
+                </li>
+                <li>
+                  <p class="article-text">
+                    Collaborated with the Sales team to develop a Dynamic Charts Application, enabling clients to create
+                    their own reports. This application became both a core component of the main project and a
+                    standalone product.
+                  </p>
+                </li>
+                <li>
+                  <p class="article-text">
+                    Conducted regular testing, debugging, and optimization to improve the overall performance and user
+                    experience of applications.
+                  </p>
+                </li>
+              </ul>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="work">Selected Work</h2>
+        <div class="work-boxes">
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">portfolio template</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                A free to use, minimal and accessible portfolio template for
+                developers.
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>SCSS</li>
+                <li>MDX</li>
+              </ol>
+
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" class="link">Explore this
+                  project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/portfolio-template.webp" alt="agency elevation" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">agencyelevation.com</h3>
+              <!-- Add small description of your project  -->
+
+              <p class="work-text">Website for Agency Elevation.</p>
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>Material UI</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="#" target="_blank" rel="noopener" class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="http://github.com/devsyedmohsin" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/agency-elevation.webp" alt="portfolio template" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">contribute.dev</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Website for DevX A dedicated space for developer experience
+              </p>
+              <ol class="work-technologies">
+                <li>Ruby</li>
+                <li>SvelteKit</li>
+                <li>Emotion</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="#" target="_blank" rel="noopener" class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="#" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/contribute-dev.webp" alt="contribute dev" />
+            </picture>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">My Toolkit</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/html.png" alt="HTML" class="skills-img" loading="lazy" title="HTML">
+          <img src="assets/images/skills/css.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+          <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+          <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy"
+            title="Typescript">
+          <img src="assets/images/skills/angular.png" alt="Angular" class="skills-img" loading="lazy" title="Angular">
+          <img src="assets/images/skills/spring-boot.png" alt="Spring Boot" class="skills-img" loading="lazy"
+            title="Spring Boot">
+          <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+          <img src="assets/images/skills/a11y.webp" alt="Accessibility" class="skills-img" loading="lazy"
+            title="Web Accessibility">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">Send Message</h2>
+        <div class="contact-content">
+
+          <div class="contact-textbox">
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Available for hire
+            </strong>
+            <p class="contact-text">
+              As a software engineer, I construct web interfaces and design
+              systems with a special love for accessibility and the
+              performance. I tend to code things from scratch and enjoy
+              bringing ideas to life.
+            </p>
+            <p class="contact-text">
+              I'm also an open-source developer, and in my spare time, I do
+              learn and make projects for Astronomy.
+            </p>
+            <!-- Replace src with your signatures and name -->
+            <!-- <img src="assets/images/signatures.png" alt="Syed Mohsin" class="signatures" loading="lazy" /> -->
+          </div>
+
+          <form action="#" class="contact-form" netlify>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email" />
+            </div>
+            <div class="form-field">
+              <label for="message">How can I help you?</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Send</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/ragul1697" target="_blank" rel="noopener"><img loading="lazy"
+                  src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/ragul-u/" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; <span>2024</span> - Developed by <a target="_blank" rel="noopener"
+            href="https://github.com/ragul1697">Ragul.</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Dark Theme</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
